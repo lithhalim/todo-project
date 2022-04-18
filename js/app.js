@@ -1,11 +1,11 @@
-let userName="lith"
+let userName=prompt("username")
 console.log(`his/her name :${userName}`)
 
-let gender="male"
+let gender=prompt("gender")
 
 console.log(`his/her gender :${gender}`)
 
-let age=-5
+let age=prompt("age")
 
 console.log(`his/her age :${age}`)
 
@@ -16,7 +16,7 @@ let skipWelcome=confirm("skip the welcoming message")
 
 if(skipWelcome===false){
     if(gender==="male"||gender==="female"){
-        alert(`welcome ${userName}   gender user is ${gender} `)
+        alert(`welcome ${userName}   gender user is ${gender} age is ${age} `)
     }
     else {
         alert(`welcoming message`)
