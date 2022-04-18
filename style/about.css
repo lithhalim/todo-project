@@ -1,44 +1,81 @@
-*{margin: 0;padding: 0;text-decoration: none;box-sizing: border-box;list-style: none;}
-
+*{margin: 0;padding: 0;list-style: none;box-sizing: border-box;text-decoration: none;}
 header {
-    display: flex;justify-content: space-between;
-    height: 10vh;background-color: rgb(181, 181, 247);
-    align-items: center;padding: 0px 50px;
+    display: flex;align-items: center;height: 10vh;
+    background-color: silver;color: black;text-transform: capitalize;
+    padding: 0px 50px;
 }
 header .logo {
-    font-size: 2em;text-transform: uppercase;font-weight: bold;
+    text-transform: uppercase;font-weight: bold;letter-spacing: 3px;
+    font-size: 2.5em;
+    
 }
-header ul {
-    display: flex;
+header nav  {
+    width: 100%;
 }
-header ul li {
-    padding: 10px 30px;text-transform: uppercase;
-    font-weight: bold;
+header nav ul {
+    display: flex;justify-content: space-evenly;
 }
-main .icon:first-child{
-    height: 100vh;display: flex;
-}
-main .text {
-    text-align: center;background-color: rgb(181, 181, 247);
-}
-main .text p {
-     margin-top: 50px;
-}
-main .icon:first-child img {
-    height: 100vh;
-}
-main .icon .add {
-    display: flex;align-items: center;padding-top: 50px;border: 2px solid black;
-    padding: 50px;
-}
-main .icon {
-    background-color:rgb(181, 181, 247) ;
-}
-main .icon div h1 {
-    font-size: 1.5em;
-}
-footer {
-    background-color: rgb(202, 202, 202);
-    padding: 30px;
+header nav ul a {
+    color: black;font-weight: bold;
 }
 
+main {
+    padding: 50px 150px;
+
+}
+main .icon {
+    display: flex;
+    align-items: center; 
+    text-align: center;gap: 60px;
+    flex-wrap: wrap;
+}
+main img {
+    width: 300px;height: 300px;border-radius: 50%;
+}
+main .text {
+    width: 50%;
+}
+main .text h1 {
+    padding-bottom: 20px;text-transform: uppercase;
+    font-weight: bold;color: red;
+}
+main .text p {
+    border: 2px solid black;
+    padding: 50px;line-height: 30px;
+    font-weight: bold;
+}
+
+
+
+.contact {
+    padding: 50px 150px;text-transform: capitalize;
+    text-align: center;
+}
+.contact>h1 {
+    width: 200px;margin-left: auto;margin-right: auto;
+    color: brown;margin-bottom: 60px;
+}
+.contact div {
+    display: flex;justify-content: space-between;
+    margin-bottom: 20px;
+}
+.contact div p {
+    flex-basis: 40%;
+    font-size: 1.5em;
+    font-weight: bold;text-transform: uppercase;
+}
+.contact input,textarea {
+    flex-basis: 40%;
+    margin-right: auto;
+}
+.contact .submit {
+    padding: 15px 50px;
+    background-color: blueviolet;
+    margin-left: 200px;
+}
+footer {
+    width: 100%;background-color: silver;
+    text-align: center;height: 10vh;
+    display: flex;align-items: center;
+    justify-content: center;
+}
