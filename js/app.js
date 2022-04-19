@@ -25,3 +25,27 @@ if(skipWelcome===false){
 if(skipWelcome===true){
     alert(`welcoming message`)
 }
+
+
+let questionOne=prompt("learn js")
+let questionTwo=prompt("learn java")
+let questionThree=prompt("learn html")
+let array=[]
+if(questionOne.length<1){
+    questionOne="invaled"
+}
+if(questionTwo.length<1){
+    questionTwo="invaled"
+
+}
+if(questionThree.length<1){
+    questionThree="invaled"
+}
+array[0]=questionOne
+array[1]=questionTwo
+array[2]=questionThree
+console.log(array)
+for(i=0;i<array.length;i++){
+    console.log(array[i])
+}
+
