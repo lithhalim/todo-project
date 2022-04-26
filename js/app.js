@@ -1,11 +1,10 @@
 let userName=prompt("username")
-console.log(`his/her name :${userName}`)
 
 let gender=prompt("gender")
 
-console.log(`his/her gender :${gender}`)
 
 let age=prompt("age")
+alert ("age is less than or equal to zero")
 
 console.log(`his/her age :${age}`)
 
